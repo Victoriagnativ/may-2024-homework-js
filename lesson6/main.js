@@ -132,11 +132,11 @@ console.log(others);
 let reduce = arr.reduce((accumulator, card )=>{
     if(card.cardSuit === 'spade'){
         accumulator.spades.push(card);
-    } if(card.cardSuit === 'diamond'){
+    }else if(card.cardSuit === 'diamond'){
         accumulator.diamonds.push(card);
-    }if(card.cardSuit === 'heart'){
+    } else if(card.cardSuit === 'heart'){
         accumulator.hearts.push(card);
-    } if (card.cardSuit === 'clubs'){
+    } else if (card.cardSuit === 'clubs'){
         accumulator.clubs.push(card) ;
     }
     return accumulator;
