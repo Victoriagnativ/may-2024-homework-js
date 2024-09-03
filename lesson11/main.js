@@ -69,6 +69,12 @@ fetch('https://dummyjson.com/recipes')
               tags:${recipe.tags}
               userId:${recipe.userId}`
              div2.appendChild(block);
+              const img1 = document.createElement('img');
+              img1.style.width = '500px';
+              img1.style.height = '400px';
+              img1.style.display = 'block';
+              img1.src = recipe.image;
+              block.appendChild(img1);
 
               let ol = document.createElement('ol');
               div2.appendChild(ol);
